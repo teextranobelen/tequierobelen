@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3 canciones que te dedicaría, Belén</title>
+  <style>
+    :root{
+      --pink: #ff8fb3;
+      --text: #222;
+      --bg: #ffffff;
+    }
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: var(--text);
+      display:flex;
+      min-height:100vh;
+      align-items:flex-start;
+      justify-content:center;
+      padding:32px;
+    }
+    .container{
+      width:100%;
+      max-width:920px;
+    }
+    header{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    h1{
+      color:var(--pink);
+      font-size:32px;
+      margin: 6px 0 2px 0;
+      line-height:1.05;
+      letter-spacing:0.4px;
+    }
+    p.lead{
+      margin:0;
+      color:#555;
+      font-size:14px;
+    }
+    .players{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    @media(min-width:760px){
+      .players{ grid-template-columns: 1fr 1fr 1fr; }
+    }
+    .player-card{
+      background:#fafafa;
+      border:1px solid #eee;
+      padding:10px;
+      border-radius:8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:center;
+    }
+    .song-title{
+      font-weight:600;
+      font-size:14px;
+      text-align:center;
+    }
+    .song-sub{
+      font-size:12px;
+      color:#666;
+      text-align:center;
+    }
+    .iframe-wrap{
+      width:100%;
+      position:relative;
+      padding-bottom:56.25%;
+      height:0;
+    }
+    .iframe-wrap iframe{
+      position:absolute;
+      left:0;
+      top:0;
+      width:100%;
+      height:100%;
+      border:0;
+      border-radius:6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>3 canciones que te dedicaría, Belén</h1>
+      <p class="lead">Cuando las palabras no alcanzan, lo hace la música.</p>
+    </header>
+
+    <main class="players">
+      <!-- Player 1 -->
+      <div class="player-card">
+        <div class="song-title">Canción 1</div>
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/a2x7AV3NBfI" title="Canción 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="player-card">
+        <div class="song-title">Canción 2</div>
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/4Dj0t28U27s" title="Canción 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <!-- Player 3 -->
+      <div class="player-card">
+        <div class="song-title">Canción 3</div>
+        <div class="iframe-wrap">
+          <iframe src="https://www.youtube.com/embed/68H1chkhblY" title="Canción 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
